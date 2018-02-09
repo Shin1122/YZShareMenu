@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,61 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9uZ-8q-7fI">
+                                <rect key="frame" x="121" y="130" width="133" height="39"/>
+                                <color key="backgroundColor" red="0.094117648900000003" green="0.7254902124" blue="0.98431372640000003" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="95" id="KJR-Wd-nSO"/>
+                                    <constraint firstAttribute="height" constant="39" id="Njh-dT-I95"/>
+                                </constraints>
+                                <state key="normal" title="单行分享">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="SharedMenuSow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XjF-76-MaP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIX-SK-pST">
+                                <rect key="frame" x="121" y="231" width="133" height="37"/>
+                                <color key="backgroundColor" red="0.094117648900000003" green="0.7254902124" blue="0.98431372640000003" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="133" id="hBC-wk-O6f"/>
+                                    <constraint firstAttribute="height" constant="37" id="sno-oh-jRi"/>
+                                </constraints>
+                                <state key="normal" title="多行分享">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="MutbaleSharedMenuShow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WXq-qP-0Ku"/>
+                                    <action selector="SharedMenuSow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Akh-Fy-VmX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uIX-SK-pST" firstAttribute="top" secondItem="9uZ-8q-7fI" secondAttribute="bottom" constant="62" id="8bB-OU-OXY"/>
+                            <constraint firstItem="9uZ-8q-7fI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="112" id="Etg-lx-n0l"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9uZ-8q-7fI" secondAttribute="trailing" constant="143" id="LFl-02-jWN"/>
+                            <constraint firstItem="uIX-SK-pST" firstAttribute="leading" secondItem="9uZ-8q-7fI" secondAttribute="leading" id="Vik-tG-HOR"/>
+                            <constraint firstItem="uIX-SK-pST" firstAttribute="trailing" secondItem="9uZ-8q-7fI" secondAttribute="trailing" id="ico-QW-b4b"/>
+                            <constraint firstItem="9uZ-8q-7fI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="137" id="mLM-wc-8zX"/>
+                            <constraint firstItem="uIX-SK-pST" firstAttribute="top" secondItem="9uZ-8q-7fI" secondAttribute="bottom" constant="62" id="rbi-tc-ZHV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="mutableSharedBtn" destination="uIX-SK-pST" id="YHh-k2-Mcb"/>
+                        <outlet property="sharedBtn" destination="9uZ-8q-7fI" id="izu-j0-qHg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
         </scene>
     </scenes>
 </document>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54709749202DDA7E0062747D /* YZSharedMod.m in Sources */ = {isa = PBXBuildFile; fileRef = 54709748202DDA7E0062747D /* YZSharedMod.m */; };
+		5470974C202DF3540062747D /* YZShareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5470974B202DF3540062747D /* YZShareCell.m */; };
 		54F6E1D6202CA326004E4537 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F6E1D5202CA326004E4537 /* AppDelegate.m */; };
 		54F6E1D9202CA326004E4537 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F6E1D8202CA326004E4537 /* ViewController.m */; };
 		54F6E1DC202CA326004E4537 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54F6E1DA202CA326004E4537 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 		54F6E1E4202CA326004E4537 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F6E1E3202CA326004E4537 /* main.m */; };
 		54F6E1EE202CA327004E4537 /* YZShareMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F6E1ED202CA327004E4537 /* YZShareMenuTests.m */; };
 		54F6E1F9202CA327004E4537 /* YZShareMenuUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F6E1F8202CA327004E4537 /* YZShareMenuUITests.m */; };
+		54F6E208202CA48D004E4537 /* YZSharedMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F6E207202CA48D004E4537 /* YZSharedMenu.m */; };
+		54F6E20B202CA547004E4537 /* 原型.png in Resources */ = {isa = PBXBuildFile; fileRef = 54F6E20A202CA547004E4537 /* 原型.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		54709747202DDA7E0062747D /* YZSharedMod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZSharedMod.h; sourceTree = "<group>"; };
+		54709748202DDA7E0062747D /* YZSharedMod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZSharedMod.m; sourceTree = "<group>"; };
+		5470974A202DF3540062747D /* YZShareCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZShareCell.h; sourceTree = "<group>"; };
+		5470974B202DF3540062747D /* YZShareCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZShareCell.m; sourceTree = "<group>"; };
 		54F6E1D1202CA326004E4537 /* YZShareMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YZShareMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F6E1D4202CA326004E4537 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		54F6E1D5202CA326004E4537 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +59,9 @@
 		54F6E1F4202CA327004E4537 /* YZShareMenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YZShareMenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F6E1F8202CA327004E4537 /* YZShareMenuUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZShareMenuUITests.m; sourceTree = "<group>"; };
 		54F6E1FA202CA327004E4537 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54F6E206202CA48D004E4537 /* YZSharedMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZSharedMenu.h; sourceTree = "<group>"; };
+		54F6E207202CA48D004E4537 /* YZSharedMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YZSharedMenu.m; sourceTree = "<group>"; };
+		54F6E20A202CA547004E4537 /* 原型.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "原型.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +112,8 @@
 		54F6E1D3202CA326004E4537 /* YZShareMenu */ = {
 			isa = PBXGroup;
 			children = (
+				54F6E20A202CA547004E4537 /* 原型.png */,
+				54F6E209202CA4B9004E4537 /* YZSharedMenu */,
 				54F6E1D4202CA326004E4537 /* AppDelegate.h */,
 				54F6E1D5202CA326004E4537 /* AppDelegate.m */,
 				54F6E1D7202CA326004E4537 /* ViewController.h */,
@@ -130,6 +143,19 @@
 				54F6E1FA202CA327004E4537 /* Info.plist */,
 			);
 			path = YZShareMenuUITests;
+			sourceTree = "<group>";
+		};
+		54F6E209202CA4B9004E4537 /* YZSharedMenu */ = {
+			isa = PBXGroup;
+			children = (
+				54709747202DDA7E0062747D /* YZSharedMod.h */,
+				54709748202DDA7E0062747D /* YZSharedMod.m */,
+				5470974A202DF3540062747D /* YZShareCell.h */,
+				5470974B202DF3540062747D /* YZShareCell.m */,
+				54F6E206202CA48D004E4537 /* YZSharedMenu.h */,
+				54F6E207202CA48D004E4537 /* YZSharedMenu.m */,
+			);
+			path = YZSharedMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +267,7 @@
 				54F6E1E1202CA326004E4537 /* LaunchScreen.storyboard in Resources */,
 				54F6E1DE202CA326004E4537 /* Assets.xcassets in Resources */,
 				54F6E1DC202CA326004E4537 /* Main.storyboard in Resources */,
+				54F6E20B202CA547004E4537 /* 原型.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,9 +292,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5470974C202DF3540062747D /* YZShareCell.m in Sources */,
+				54F6E208202CA48D004E4537 /* YZSharedMenu.m in Sources */,
 				54F6E1D9202CA326004E4537 /* ViewController.m in Sources */,
 				54F6E1E4202CA326004E4537 /* main.m in Sources */,
 				54F6E1D6202CA326004E4537 /* AppDelegate.m in Sources */,
+				54709749202DDA7E0062747D /* YZSharedMod.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,10 +463,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5DVPT5R6X2;
 				INFOPLIST_FILE = YZShareMenu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Shin.YZShareMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -447,10 +478,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5DVPT5R6X2;
 				INFOPLIST_FILE = YZShareMenu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Shin.YZShareMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

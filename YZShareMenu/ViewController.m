@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 
+
 @interface ViewController ()
 
 @end
@@ -16,9 +17,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    _sharedMenu = [[YZSharedMenu alloc]init];
+    _sharedMenu.didSelectedSharedMod = ^(YZSharedMod *sharedMod) {
+      
+        
+        
+    };
+    
 }
 
+- (IBAction)SharedMenuSow:(id)sender {
+    [_sharedMenu  show];
+}
+- (IBAction)MutbaleSharedMenuShow:(id)sender {
+    [_sharedMenu  show];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

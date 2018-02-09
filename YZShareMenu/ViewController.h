@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YZSharedMenu.h"
 
 @interface ViewController : UIViewController
-
+@property (weak, nonatomic) IBOutlet UIButton *sharedBtn;
+@property (weak, nonatomic) IBOutlet UIButton *mutableSharedBtn;
+@property (nonatomic, strong) YZSharedMenu *sharedMenu ;
 
 @end
 
